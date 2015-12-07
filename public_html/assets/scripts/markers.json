@@ -1,0 +1,58 @@
+[{
+        "name": "慶應義塾大学湘南藤沢キャンパス",
+        "detail": "神奈川県藤沢市",
+        "show_popup": false,
+        "url": "http://www.sfc.keio.ac.jp",
+        "point": [35.38, 139.42]
+    }, {
+        "name": "関西学院大学",
+        "detail": "兵庫県三田市",
+        "show_popup": false,
+        "url": "http://www.kwansei.ac.jp/ksc/",
+        "point": [34.91, 135.16]
+    }, {
+        "name": "明治大学",
+        "detail": "東京都中野区",
+        "show_popup": false,
+        "url": "http://www.meiji.ac.jp/nakano/",
+        "point": [35.70, 139.65]
+    }, {
+        "name": "山形大学",
+        "detail": "山形県米沢市",
+        "show_popup": false,
+        "url": "http://www.meiji.ac.jp/nakano/",
+        "point": [37.89, 140.10]
+    }, {
+        "name": "岐阜県立国際情報科学芸術大学院",
+        "detail": "岐阜県大垣市",
+        "show_popup": false,
+        "url": "http://www.iamas.ac.jp",
+        "point": [35.36, 136.63]
+    }, {
+        "name": "産業技術総合研究所",
+        "detail": "茨城県つくば市",
+        "show_popup": false,
+        "url": "http://www.aist.go.jp",
+        "point": [36.06, 140.13]
+    }, {
+        "name": "MIT",
+        "detail": "Boston, USA",
+        "show_popup": false,
+        "url": "http://www.mit.edu",
+        "point": [42.36, -71.10]
+    }, {
+        "name": "慶應義塾大学ソーシャルファブリケーション・ラボ",
+        "detail": "神奈川県横浜市",
+        "show_popup": false,
+        "url": "http://coi.sfc.keio.ac.jp",
+        "point": [35.44, 139.64]
+    }, {
+        "name": "IITH",
+        "detail": "Hyderabad, India",
+        "show_popup": false,
+        "url": "http://www.mit.edu",
+        "point": [17.50, 78.13]
+    }
+
+
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "name":"TOKYO",
+    "detail":"Pledged in 2015",
+    "show_popup":true,
+    "url":"https://en.wikipedia.org/wiki/Tokyo",
+    "point":[35.41,139.41]
+  },
+  {
+    "name":"NEW YORK",
+    "detail":"Pledged in 2014",
+    "show_popup":true,
+    "url":"https://en.wikipedia.org/wiki/New_York",
+    "point":[40.15,-74.0]
+  },
+  {
+    "name":"ENGLAND",
+    "detail":"Pledged in 2013",
+    "show_popup":false,
+    "url":"https://en.wikipedia.org/wiki/England",
+    "point":[51.30,0.7]
+  }
+]
