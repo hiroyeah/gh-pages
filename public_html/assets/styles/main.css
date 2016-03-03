@@ -298,7 +298,7 @@ a:hover, a:active {
 }
 
 .header_logo_coi a {
-	width: 186px;
+	width: 245px;
 	height: 39px;
 	background: url(../images/coi/header_logo.png) no-repeat top left;
 }
@@ -307,7 +307,7 @@ a:hover, a:active {
 	.header_logo_coi a {
 		background: none;
 		background: url(../images/coi/header_logo@2x.png) no-repeat top left;
-		background-size: 186px 39px;
+		background-size: 245px 39px;
 	}
 }
 
@@ -506,6 +506,7 @@ html.sb-scroll-lock.sb-active:not(.sb-static) {
 .sb-slidebar,
 .sb-slidebar * {
 	-webkit-transform: translateZ( 0px );
+	transform: translateZ( 0px );
 }
 
 .sb-left {
@@ -2398,9 +2399,9 @@ a:active .news_item_csm h3 {
 }
 
 .footer_logo_coi a {
-	width: 205px;
+	width: 233px;
 	background: url(../images/coi/footer_logo@2x.png) no-repeat top left;
-	background-size: 205px 42px;
+	background-size: 233px 42px;
 }
 
 .footer_logo_csm a {
