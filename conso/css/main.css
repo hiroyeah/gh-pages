@@ -1,0 +1,612 @@
+* {
+    --main-color: rgb(9, 66, 96);
+    --main-color-a6: rgba(9, 66, 96, 0.6);
+    --main-color-a7: rgba(9, 66, 96, 0.7);
+    --main-color-a8: rgba(9, 66, 96, 0.8);
+    --main-color-a9: rgba(9, 66, 96, 0.9);
+    --sub-color: rgb(200, 32, 32);
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    background-image: url('../img/conso_web_background.png');
+    background-position: center;
+    background-size: cover;
+    font-family: YuGothic, "Yu Gothic", "Helvetica", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+a.blue {
+    color: rgb(51, 132, 163);
+}
+
+a.blue:hover {
+    color: var(--sub-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px;
+}
+
+p {
+    line-height: 2em;
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    padding: 0 30px;
+    width: 1200px;
+}
+
+.back-japan {
+    margin: 117px 10px 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 475px;
+}
+
+.back-japan img {
+    width: 100%;
+}
+
+.back-world {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.back-world img {
+    width: 100%;
+}
+
+/*----- header -----*/
+.header {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+    padding: 20px 0 15px;
+}
+
+.header .container {
+    position: relative;
+}
+
+.header .icon {
+    width: 60px;
+}
+
+.header .title {
+    font-weight: bold;
+}
+
+.header .title .ja {
+    font-size: 1.8em;
+    line-height: 1.4em;
+}
+
+.header .title .en {
+    font-size: 1.06em;
+    line-height: 1.2em;
+}
+
+.header .title .item {
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.header .navbar {
+    bottom: 0;
+    right: 0;
+    margin-right: 30px;
+    position: absolute;
+}
+
+.header .navbar .item {
+    display: inline-block;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.header .navbar .item a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.header .navbar .item a.active {
+    color: var(--sub-color);
+}
+
+.header .navbar .item a:hover {
+    color: var(--main-color-a6);
+}
+
+/*----- main -----*/
+.main {
+    margin: 180px auto;
+}
+
+.main .title {
+    text-align: right;
+}
+
+.main .title img {
+    width: 55%;
+}
+
+/*----- contents -----*/
+.contents .columns {
+    width: 1242px;
+}
+
+/* card */
+.contents .card {
+    margin: 0 42px 42px 0;
+}
+
+.contents .card .title {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.contents .card .title .pad {
+    padding: 10px 30px;
+}
+
+.contents .card .image .title {
+    background: rgba(255, 255, 255, 0.7);
+    color: var(--main-color);
+}
+
+.contents .col2 .card,
+.contents .col3 .card,
+.contents .col-70-30 .card {
+    float: left;
+}
+
+.contents .col2 .card {
+    width: 579px;
+}
+
+.contents .col3 .card {
+    width: 372px;
+}
+
+.contents .col-70-30 .card:nth-of-type(1) {
+    width: 810px;
+}
+
+.contents .col-70-30 .card:nth-of-type(2) {
+    width: 347px;
+}
+
+.contents .col2 .card .image,
+.contents .col3 .card .image {
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+}
+
+.contents .col2 .card .image .back,
+.contents .col3 .card .image .back {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    opacity: 1.0;
+    margin-top: 0%;
+    transition: height 0.25s, opacity 0.25s, margin-top 0.25s;
+}
+
+.contents .col2 .card .image .title,
+.contents .col3 .card .image .title {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.contents .col2 .card .text,
+.contents .col3 .card .text {
+    background: var(--main-color);
+    color: rgb(255, 255, 255);
+    height: 140px;
+    line-height: 1.8em;
+    padding: 20px 30px;
+    transition: background 0.25s;
+}
+
+.contents .col2 .card:hover .image .back,
+.contents .col3 .card:hover .image .back {
+    height: 110%;
+    opacity: 0.7;
+    margin-top: -2.5%;
+}
+
+.contents .col2 .card:hover .text,
+.contents .col3 .card:hover .text {
+    background: rgb(231, 145, 106);
+}
+
+/* book */
+.contents .book {
+    float: left;
+    margin: 0 30px 30px 0;
+    position: relative;
+    width: 585px;
+}
+
+.contents .book .text {
+    background: var(--main-color-a9);
+    color: rgb(255, 255, 255);
+    width: 60%;
+    height: 320px;
+}
+
+.contents .book .text .pad {
+    padding: 30px;
+}
+
+.contents .book .text .title {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 0 0 10px;
+    margin: 0 0 20px;
+}
+
+.contents .book .text .subtitle {
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.contents .book .text .member {
+    font-size: 0.8em;
+    line-height: 1.6em;
+}
+
+.contents .book .text .more {
+    font-weight: bold;
+    text-align: right;
+    margin: 30px 0 0;
+}
+
+.contents .book .image {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    margin: 0 0 0 60%;
+    width: 40%;
+    height: 320px;
+}
+
+/* board */
+.contents .board {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 60px 90px;
+    margin: 0 0 90px;
+}
+
+.contents .board .title {
+    color: var(--main-color);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.contents .board .text {
+    line-height: 2em;
+}
+
+.contents .board .columns {
+    width: 1080px;
+}
+
+.contents .board .columns.col2 .card {
+    margin: 0 60px 0 0;
+    width: 480px;
+}
+
+.contents .board .columns.col3 .card {
+    margin: 0 45px 0 0;
+    width: 310px;
+}
+
+.contents .board .columns.col-20-80 .card:nth-of-type(1) {
+    float: left;
+    margin: 0 30px 0 0;
+    width: 308px;
+}
+
+.contents .board .columns.col-20-80 .card:nth-of-type(2) {
+    float: left;
+    margin: 0;
+    width: 682px;
+}
+
+/* panel */
+.contents .panel {
+    background: var(--main-color-a9);
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    padding: 60px;
+    margin: 0 60px 90px;
+}
+
+.contents .panel .title {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+.contents .panel .text {
+    line-height: 1.8em;
+}
+
+/* slider */
+.contents .slider .image {
+    position: relative;
+}
+
+.contents .slider .image .navbar {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.contents .slider .navbar .tabs .item {
+    background: var(--main-color-a7);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-weight: bold;
+    margin: 0.5px;
+    padding: 15px 0;
+    text-align: center;
+    width: 239px;
+}
+
+.contents .slider .text {
+    background: var(--main-color);
+    color: rgb(255, 255, 255);
+    padding: 20px 30px;
+}
+
+/* company */
+.contents .company .title {
+    background: rgba(178, 199, 208, 0.9);
+    color: var(--main-color);
+}
+
+.contents .company .text {
+    background: var(--main-color);
+    color: rgb(255, 255, 255);
+    height: 290px;
+    padding: 20px 30px;
+}
+
+.contents .company .text .item {
+    display: inline-block;
+    margin: 0 25px 5px 0;
+}
+
+/* banner */
+.contents .banner {
+    padding: 0 20px 20px;
+}
+
+.contents .banner .item img {
+    width: 100%;
+}
+
+/* list */
+.contents .list .item .text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* icon */
+.contents .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.contents .icon.file {
+    background-image: url('../img/join-2.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contents .icon.files {
+    background-image: url('../img/report-1.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contents .icon.docs {
+    background-image: url('../img/report-2.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contents .icon.image {
+    background-image: url('../img/report-4.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+/*----- footer -----*/
+.footer {
+    background: rgba(255, 255, 255, 0.8);
+    border-top: 2px solid var(--main-color);
+    color: var(--main-color);
+    padding: 25px 0;
+}
+
+.footer .icon {
+    width: 50px;
+}
+
+.footer .item {
+    color: var(--main-color);
+    float: left;
+    font-weight: bold;
+    line-height: 1.6em;
+    padding: 0 20px 0 0;
+}
+
+/*----- swiper css settings -----*/
+.swiper-container {
+    width: 100%;
+    height: 280px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide .info {
+    background: var(--main-color-a6);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 30px 60px 0 auto;
+    width: 280px;
+}
+
+.swiper-slide .info .slider-title {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.swiper-slide .groups {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 0 15px;
+    margin: 0 60px 0 auto;
+    text-align: center;
+    width: 280px;
+}
+
+/*----- utilities -----*/
+.center {
+    text-align: center;
+}
+
+.vspace {
+    margin-bottom: 2em;
+}
+
+.vtop {
+    vertical-align: top;
+}
+
+.clearfix:before {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.dotted-line {
+    margin: 5px 0;
+}
+
+.dotted-line svg {
+    width: 130px;
+    height: 20px;
+}
+
+.dotted-line svg line {
+    fill: none;
+    stroke: rgb(94, 139, 158);
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-dasharray: 0.5, 10;
+}
+
+/*----- responsive -----*/
+/* applied when browser width is 1260px or less */
+@media (max-width: 1260px) {
+    .container {
+        width: 900px;
+    }
+
+    /*----- contents -----*/
+    .contents .columns {
+        width: 942px;
+    }
+
+    .contents .col2 .card {
+        width: 429px;
+    }
+
+    .contents .col3 .card {
+        width: 272px;
+    }
+
+    .contents .col-70-30 .card:nth-of-type(1) {
+        width: 600px;
+    }
+
+    .contents .col-70-30 .card:nth-of-type(2) {
+        width: 257px;
+    }
+
+    .contents .col2 .card .image,
+    .contents .col3 .card .image {
+        height: 180px;
+        position: relative;
+    }
+
+    .contents .col2 .card .text,
+    .contents .col3 .card .text {
+        height: 180px;
+    }
+
+    .contents .company .text {
+        height: 100%;
+    }
+}
+
+/* applied when browser width is 960px or less */
+@media (max-width: 960px) {
+    .container {
+        width: 600px;
+    }
+
+    /*----- contents -----*/
+    .contents .columns {
+        width: 642px;
+    }
+
+    .contents .col2 .card,
+    .contents .col3 .card,
+    .contents .col-70-30 .card {
+        width: 600px;
+    }
+
+    .contents .col2 .card .image,
+    .contents .col3 .card .image {
+        height: 200px;
+        position: relative;
+    }
+
+    .contents .col2 .card .text,
+    .contents .col3 .card .text {
+        height: 120px;
+    }
+}
