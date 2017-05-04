@@ -322,13 +322,13 @@ p {
 .contents .board .columns.col-20-80 .card:nth-of-type(1) {
     float: left;
     margin: 0 30px 0 0;
-    width: 308px;
+    width: 480px;
 }
 
 .contents .board .columns.col-20-80 .card:nth-of-type(2) {
     float: left;
     margin: 0;
-    width: 682px;
+    width: 520px;
 }
 
 /* panel */
