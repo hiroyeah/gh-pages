@@ -5,6 +5,7 @@
     --main-color-a8: rgba(9, 66, 96, 0.8);
     --main-color-a9: rgba(9, 66, 96, 0.9);
     --sub-color: rgb(200, 32, 32);
+    --subsub-color: rgb(231, 145, 106);
 }
 
 html, body {
@@ -232,7 +233,7 @@ p {
 
 .contents .col2 .card:hover .text,
 .contents .col3 .card:hover .text {
-    background: rgb(231, 145, 106);
+    background: var(--subsub-color);
 }
 
 /* book */
@@ -389,7 +390,6 @@ p {
 .contents .company .text {
     background: var(--main-color);
     color: rgb(255, 255, 255);
-    height: 290px;
     padding: 20px 30px;
 }
 
@@ -481,6 +481,7 @@ p {
     padding: 15px;
     margin: 30px 60px 0 auto;
     width: 280px;
+    height: 100px;
 }
 
 .swiper-slide .info .slider-title {
@@ -491,10 +492,26 @@ p {
 .swiper-slide .groups {
     color: rgb(255, 255, 255);
     font-weight: bold;
-    padding: 0 15px;
     margin: 0 60px 0 auto;
     text-align: center;
-    width: 280px;
+    width: 310px;
+}
+
+.swiper-slide .groups .item {
+    display: inline-block;
+    padding: 0 12px;
+}
+
+.swiper-slide .groups .item.active {
+    color: var(--subsub-color);
+}
+
+.swiper-slide .groups .triangle {
+	border: 7px solid transparent;
+	border-bottom: 7px solid var(--subsub-color);
+    margin: -7px auto 0;
+    width: 0;
+	height: 0;
 }
 
 /*----- utilities -----*/
