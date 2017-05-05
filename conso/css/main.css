@@ -6,6 +6,7 @@
     --main-color-a9: rgba(9, 66, 96, 0.9);
     --sub-color: rgb(200, 32, 32);
     --subsub-color: rgb(231, 145, 106);
+    --subsub-color-a6: rgba(231, 145, 106, 0.6);
 }
 
 html, body {
@@ -150,7 +151,9 @@ p {
 
 /* card */
 .contents .card {
+    display: block;
     margin: 0 42px 42px 0;
+    text-decoration: none;
 }
 
 .contents .card .title {
@@ -478,10 +481,17 @@ p {
 .swiper-slide .info {
     background: var(--main-color-a6);
     color: rgb(255, 255, 255);
+    display: block;
+    text-decoration: none;
     padding: 15px;
     margin: 30px 60px 0 auto;
     width: 280px;
     height: 100px;
+    transition: background 0.25s;
+}
+
+.swiper-slide .info:hover {
+    background: var(--subsub-color-a6);
 }
 
 .swiper-slide .info .slider-title {

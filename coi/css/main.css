@@ -150,7 +150,9 @@ p {
 
 /* card */
 .contents .card {
+    display: block;
     margin: 0 42px 42px 0;
+    text-decoration: none;
 }
 
 .contents .card .title {
@@ -163,8 +165,8 @@ p {
 }
 
 .contents .card .image .title {
-    background: rgba(255, 255, 255, 0.7);
-    color: var(--main-color);
+    background: var(--main-color-a7);
+    color: rgb(255, 255, 255);
 }
 
 .contents .col2 .card,
@@ -364,8 +366,8 @@ p {
 }
 
 .contents .slider .text {
-    background: var(--main-color);
-    color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    color: var(--main-color);
     padding: 20px 30px;
 }
 
