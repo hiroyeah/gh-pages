@@ -202,7 +202,7 @@ p {
 
 .contents .col2 .card .image .back,
 .contents .col3 .card .image .back {
-    background-position: center;
+    background-position:  center;
     background-size: cover;
     height: 100%;
     opacity: 1.0;
@@ -316,6 +316,10 @@ p {
     line-height: 2em;
 }
 
+.contents .board .item img {
+    width: 400px;
+}
+
 .contents .board .columns {
     width: 1080px;
 }
@@ -423,6 +427,7 @@ p {
     vertical-align: top;
 }
 
+
 /* icon */
 .contents .icon {
     display: inline-block;
@@ -453,6 +458,8 @@ p {
     background-position: center;
     background-size: cover;
 }
+
+
 
 /*----- footer -----*/
 .footer {
