@@ -252,11 +252,11 @@ p {
 }
 
 .contents .book .text {
-    background: var(--main-color-a9);
+    background: var(--main-color);
     color: rgb(255, 255, 255);
     float: left;
-    width: 30%;
-    height: 320px;
+    width: 26.5%;
+    height: 340px;
 }
 
 .contents .book .text .title {
@@ -279,16 +279,16 @@ p {
 }
 
 .contents .book .text .more {
-    font-weight: bold;
+
     text-align: right;
 }
 
 .contents .book .detail {
-    background: var(--main-color);
+    background: var(--main-color-a9);
     color: rgb(255, 255, 255);
     float: left;
     width: 50%;
-    height: 320px;
+    height: 340px;
 }
 
 .contents .book .image {
@@ -296,7 +296,7 @@ p {
     background-size: cover;
     float: left;
     width: 20%;
-    height: 320px;
+    height: 340px;
 }
 
 /* board */
@@ -499,7 +499,7 @@ p {
     text-decoration: none;
     padding: 15px;
     margin: 30px 60px 0 auto;
-    width: 280px;
+    width: 300px;
     height: 100px;
     transition: background 0.25s;
 }
@@ -518,7 +518,7 @@ p {
     font-weight: bold;
     margin: 0 60px 0 auto;
     text-align: center;
-    width: 310px;
+    width: 340px;
 }
 
 .swiper-slide .groups .item {
